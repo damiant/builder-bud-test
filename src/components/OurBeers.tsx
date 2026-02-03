@@ -1,0 +1,58 @@
+import React from 'react';
+import OurBeer from './OurBeer';
+import './OurBeers.css';
+
+const BEERS = [
+  {
+    title: 'Budweiser',
+    description: 'American-Style Lager',
+    abv: '5.0% ABV',
+    imageUrl: 'https://cdn.builder.io/api/v1/image/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2Fe48cf6d698f54bfa91fdbeecfea95c24?format=webp&width=800&height=1200',
+  },
+  {
+    title: 'Budweiser Zero',
+    description: 'Alcohol Free',
+    abv: '0.0% ABV',
+    imageUrl: 'https://cdn.builder.io/api/v1/image/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2Ffea696736857464da574eb27710ed47d?format=webp&width=800&height=1200',
+  },
+  {
+    title: 'Budweiser Select',
+    description: 'Full-Flavored Light Lager',
+    details: '99 Cals, 3.1g Carbs',
+    imageUrl: 'https://cdn.builder.io/api/v1/image/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2Ff9c09551ee3f4643af036f621ec16a09?format=webp&width=800&height=1200',
+  },
+  {
+    title: 'Budweiser Select 55',
+    description: 'Premium Light Lager',
+    details: '55 Cals, 1.9g Carbs',
+    imageUrl: 'https://cdn.builder.io/api/v1/image/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2Fd961c977458a46f7a249aa99ebce1ed6?format=webp&width=800&height=1200',
+  },
+  {
+    title: 'Budweiser Supreme',
+    description: 'American Golden Lager',
+    imageUrl: 'https://cdn.builder.io/api/v1/image/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2F90f1a4249adc45ffad9777e0c5bb38f6?format=webp&width=800&height=1200',
+  },
+  {
+    title: 'Budweiser Chelada',
+    description: 'Lager with Clamato',
+    abv: '5.0% ABV',
+    imageUrl: 'https://cdn.builder.io/api/v1/image/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2F65e3a4b0ed1346c98bb09f448da65898?format=webp&width=800&height=1200',
+  },
+];
+
+const OurBeers: React.FC = () => {
+  return (
+    <section className="our-beers-section">
+      <div className="our-beers-header">
+        <h2 className="our-beers-title">Our Beers</h2>
+      </div>
+      <div className="our-beers-grid">
+        {BEERS.map((beer, index) => (
+          <OurBeer key={index} {...beer} />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default OurBeers;
