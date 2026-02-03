@@ -17,7 +17,7 @@ const Header: React.FC = () => {
               <div className={`menu-icon-bar ${isMenuOpen ? 'open' : ''}`}></div>
             </div>
           </section>
-          <button className="menu-text-button" onClick={toggleMenu}>Main Menu</button>
+          <div className="menu-text-button" onClick={toggleMenu} role="button" tabIndex={0}>Main Menu</div>
         </div>
 
         <a href="https://us.budweiser.com/" className="logo-link">
@@ -31,7 +31,7 @@ const Header: React.FC = () => {
 
         <div className="header-right">
           <a href="https://www.anheuser-busch.com/renewable-electricity" className="nav-link">
-            <button className="nav-button">Sustainability</button>
+            <div className="nav-button">Sustainability</div>
           </a>
           <div className="divider-wrapper">
             <svg className="divider-svg" width="2" height="35" viewBox="0 0 3 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +39,7 @@ const Header: React.FC = () => {
             </svg>
           </div>
           <a href="https://us.budweiser.com/locator" className="nav-link">
-            <button className="nav-button">Find Your Bud</button>
+            <div className="nav-button">Find Your Bud</div>
           </a>
           <div className="divider-wrapper">
             <svg className="divider-svg" width="3" height="41" viewBox="0 0 3 41" fill="none" xmlns="http://www.w3.org/2000/svg">
