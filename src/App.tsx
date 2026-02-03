@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import WhatsNew from './components/WhatsNew';
 import OurBeers from './components/OurBeers';
 import FindABud from './components/FindABud';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <OurBeers />
         <FindABud />
       </main>
+      <Footer />
     </div>
   );
 }
