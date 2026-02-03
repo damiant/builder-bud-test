@@ -1,18 +1,17 @@
 .whats-new-section {
   width: 100%;
-  min-height: 100vh;
   background-image: var(--whats-new-bg);
   background-repeat: repeat;
   background-size: auto; /* Ensure it repeats at original or specified size */
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
 .whats-new-container {
-  padding: 60px 40px;
+  padding: 20px 40px;
   text-align: center;
   max-width: 1200px;
   width: 90%;
