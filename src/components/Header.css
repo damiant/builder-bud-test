@@ -207,6 +207,7 @@
   line-height: 32px;
   text-align: left;
   padding: 0;
+  text-transform: uppercase;
 }
 
 .arrow-icon {
