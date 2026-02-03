@@ -13,7 +13,7 @@
 /* Compact styles for 6-column layout on desktop */
 @media (min-width: 1201px) {
   .our-beer-card {
-    padding: 80px 10px 20px;
+    padding: 120px 10px 20px;
     border-radius: 12px;
   }
 
