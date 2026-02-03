@@ -14,19 +14,20 @@
 
 .our-beers-title {
   font-family: var(--font-brand);
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--brand-red);
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .our-beers-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 140px 10px; /* Tight gap to fit 6 items */
+  gap: 100px 15px; /* Reduced gap */
   max-width: 1400px;
-  width: 100%;
+  width: 95%;
   justify-items: center;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 @media (max-width: 1200px) {
