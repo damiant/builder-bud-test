@@ -28,5 +28,9 @@ export default defineConfig({
       name: 'OurBeersTop',
       path: './src/components/OurBeersTop.tsx',
     },
+    {
+      name: 'OurBeer',
+      path: './src/components/OurBeer.tsx',
+    },
   ],
 });
