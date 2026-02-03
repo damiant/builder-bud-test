@@ -1,24 +1,27 @@
 import React from 'react';
 import './OurBeer.css';
 
-const OurBeer: React.FC = () => {
+interface OurBeerProps {
+  title: string;
+  description: string;
+  abv?: string;
+  imageUrl: string;
+  details?: string;
+}
+
+const OurBeer: React.FC<OurBeerProps> = ({ title, description, abv, imageUrl, details }) => {
   return (
-    <section className="our-beer-section">
-      <div className="our-beer-card">
-        <div className="beer-image-wrapper">
-          <img 
-            src="https://cdn.builder.io/api/v1/image/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2F9d0cb1390ba5438f8d6e863ff4870c5a?format=webp&width=800&height=1200" 
-            alt="Budweiser Can" 
-            className="beer-overlay-image"
-          />
-        </div>
-        <div className="beer-card-content">
-          <h2 className="beer-card-title">Budweiser</h2>
-          <p className="beer-card-description">American-Style Lager,</p>
-          <p className="beer-card-abv">5.0% ABV</p>
-        </div>
+    <div className="our-beer-card">
+      <div className="beer-image-wrapper">
+        <img src={imageUrl} alt={title} className="beer-overlay-image" />
       </div>
-    </section>
+      <div className="beer-card-content">
+        <h2 className="beer-card-title">{title}</h2>
+        <p className="beer-card-description">{description}</p>
+        {abv && <p className="beer-card-abv">{abv}</p>}
+        {details && <p className="beer-card-details">{details}</p>}
+      </div>
+    </div>
   );
 };
 

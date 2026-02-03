@@ -1,11 +1,3 @@
-.our-beer-section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 100px 20px 60px;
-  background-color: var(--brand-white);
-}
-
 .our-beer-card {
   position: relative;
   width: 100%;
@@ -15,6 +7,7 @@
   padding: 120px 30px 40px;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin-top: 80px; /* Space for the overlapping image */
 }
 
 .beer-image-wrapper {
@@ -40,8 +33,9 @@
 }
 
 .beer-card-description,
-.beer-card-abv {
-  font-size: 1.2rem;
+.beer-card-abv,
+.beer-card-details {
+  font-size: 1.1rem;
   color: var(--brand-white);
   margin: 5px 0;
   font-weight: 600;
