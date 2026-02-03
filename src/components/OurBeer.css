@@ -13,24 +13,26 @@
 /* Compact styles for 6-column layout on desktop */
 @media (min-width: 1201px) {
   .our-beer-card {
-    padding: 100px 15px 25px;
+    padding: 80px 10px 20px;
+    border-radius: 12px;
   }
 
   .beer-image-wrapper {
-    width: 120px;
-    height: 180px;
-    top: -80px;
+    width: 100px;
+    height: 150px;
+    top: -60px;
   }
 
   .beer-card-title {
-    font-size: 1.5rem;
-    margin-bottom: 8px;
+    font-size: 1.25rem;
+    margin-bottom: 4px;
   }
 
   .beer-card-description,
   .beer-card-abv,
   .beer-card-details {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    font-weight: 400;
   }
 }
 
@@ -56,18 +58,19 @@
 
 .beer-card-title {
   font-family: var(--font-brand);
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   color: var(--brand-white);
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .beer-card-description,
 .beer-card-abv,
 .beer-card-details {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--brand-white);
-  margin: 5px 0;
-  font-weight: 600;
+  margin: 2px 0;
+  font-weight: 400;
 }
 
 @media (max-width: 480px) {
