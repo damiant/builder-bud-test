@@ -12,5 +12,21 @@ export default defineConfig({
       name: 'Hero',
       path: './src/components/Hero.tsx',
     },
+    {
+      name: 'WhatsNew',
+      path: './src/components/WhatsNew.tsx',
+    },
+    {
+      name: 'OurBeers',
+      path: './src/components/OurBeers.tsx',
+    },
+    {
+      name: 'FindABud',
+      path: './src/components/FindABud.tsx',
+    },
+    {
+      name: 'OurBeersTop',
+      path: './src/components/OurBeersTop.tsx',
+    },
   ],
 });
