@@ -21,26 +21,27 @@
 
 .our-beers-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 140px 40px; /* Increased row gap for better spacing with overlapping images */
-  max-width: 1200px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 140px 10px; /* Tight gap to fit 6 items */
+  max-width: 1400px;
   width: 100%;
   justify-items: center;
   padding-top: 60px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .our-beers-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 140px 20px;
   }
 }
 
 @media (max-width: 768px) {
   .our-beers-grid {
-    grid-template-columns: 1fr;
-    gap: 100px 20px;
+    grid-template-columns: repeat(2, 1fr); /* 2 across on mobile */
+    gap: 100px 10px;
   }
-  
+
   .our-beers-title {
     font-size: 3rem;
   }
