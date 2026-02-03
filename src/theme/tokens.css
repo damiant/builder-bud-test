@@ -27,4 +27,7 @@
   /* Fonts */
   --font-script: 'Dancing Script', cursive;
   --font-brand: "Bud Crafted", sans-serif;
+
+  /* Assets */
+  --whats-new-bg: url('https://cdn.builder.io/api/v1/image/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2F3e175ecc687743ed8e428658650560f6?format=webp&width=800&height=1200');
 }
