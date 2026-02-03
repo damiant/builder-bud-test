@@ -10,7 +10,6 @@
     "format": "prettier --write \"src/**/*.{ts,tsx,json,css}\"",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "builder": "builder.io launch",
     "check": "npm run lint && npm run build && npm run test run",
     "preview": "vite preview"
   },
