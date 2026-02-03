@@ -1,7 +1,11 @@
 import React from 'react';
 import './Hero.css';
 
-const Hero: React.FC = () => {
+interface HeroProps {
+  heroImageUrl?: string;
+}
+
+const Hero: React.FC<HeroProps> = ({ heroImageUrl }) => {
   return (
     <section className="hero">
       <div className="hero-banner-container">
@@ -16,7 +20,13 @@ const Hero: React.FC = () => {
         </div>
       </div>
       <div className="hero-content-container">
-        {/* Right side content - user will fill this in later */}
+        {heroImageUrl && (
+          <img 
+            src={heroImageUrl} 
+            alt="Hero Visual" 
+            className="hero-image" 
+          />
+        )}
       </div>
     </section>
   );
