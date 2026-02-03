@@ -14,10 +14,11 @@
 
 .our-beers-title {
   font-family: var(--font-brand);
-  font-size: 3rem;
-  color: var(--brand-red);
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-size: 4rem;
+  color: #001633; /* Dark blue matching the cards */
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: bold;
 }
 
 .our-beers-grid {
