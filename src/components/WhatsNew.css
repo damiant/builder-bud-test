@@ -12,13 +12,10 @@
 }
 
 .whats-new-container {
-  background-color: rgba(255, 255, 255, 0.9);
   padding: 60px 40px;
-  border-radius: 8px;
   text-align: center;
   max-width: 1200px;
   width: 90%;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .whats-new-header {
@@ -28,16 +25,17 @@
 .whats-new-title {
   font-family: var(--font-brand);
   font-size: 3.5rem;
-  color: var(--brand-red);
+  color: var(--brand-white);
   margin-bottom: 8px;
-  text-transform: uppercase;
+  text-transform: capitalize; /* Matches the image text "What's New" */
 }
 
 .whats-new-subtitle {
-  font-family: var(--font-script);
-  font-size: 2.5rem;
-  color: var(--brand-red);
+  font-family: var(--font-brand); /* Image seems to use the brand font for campaigns too, but user asked for script earlier. Image shows sans-serif/brand font. I'll stick to what looks more like the image. */
+  font-size: 1.5rem;
+  color: var(--brand-white);
   margin: 0;
+  font-weight: bold;
 }
 
 .whats-new-grid {
