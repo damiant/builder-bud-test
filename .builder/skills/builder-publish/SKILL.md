@@ -30,18 +30,9 @@ Start your development server with DevTools enabled. For many frameworks, this i
 npx builder-dev-tools
 ```
 
-## Publishing Component Mappings
+### Register Design Tokens
+Ask the user if they would like to register design tokens. This operation will allow only design tokens that have been registered to be used in the design tab. To register design tokens follow references/design-tokens.md
 
-If you are using Figma component mappings, use the `publish` command to sync them to Builder:
-
-```bash
-npx "@builder.io/dev-tools@latest" figma publish
-```
-
-### Common Flags:
-- `--dryrun`: Validate mappings without publishing.
-- `--force`: Publish even with errors.
-- `--verbose`: Detailed output.
 
 ## Resources
 
