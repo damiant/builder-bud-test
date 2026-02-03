@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+:root {
+  /* Pastel Palette */
+  --pastel-primary: #FFC8DD;
+  --pastel-secondary: #A2D2FF;
+  --pastel-accent: #CDB4DB;
+  --pastel-success: #B9FBC0;
+  --pastel-warning: #FFFFD1;
+  --pastel-bg: #FFF9F9;
+  --pastel-text: #4A4A4A;
+  --pastel-text-secondary: #7A7A7A;
+
+  /* Fonts */
+  --font-script: 'Dancing Script', cursive;
+}
