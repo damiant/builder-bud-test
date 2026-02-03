@@ -1,3 +1,5 @@
+@import './theme/tokens.css';
+
 :root {
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Inter', sans-serif;
