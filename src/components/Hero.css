@@ -1,0 +1,111 @@
+.hero {
+  display: flex;
+  position: relative;
+  min-height: 600px;
+  background-color: var(--brand-red);
+}
+
+.hero-banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 60px;
+  position: relative;
+  width: 50%;
+}
+
+.hero-banner-content {
+  max-width: 600px;
+}
+
+.hero-banner-title {
+  color: var(--brand-white);
+  font-family: var(--font-brand);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 30px 0;
+}
+
+.hero-banner-description {
+  color: var(--brand-white);
+  font-family: "Franklin Gothic Book Regular", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0 0 40px 0;
+}
+
+.hero-banner-cta {
+  background-color: var(--brand-white);
+  border: none;
+  border-radius: 50px;
+  color: var(--brand-red);
+  cursor: pointer;
+  font-family: "Franklin Gothic Book Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 16px 48px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-banner-cta:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.hero-banner-cta:active {
+  transform: translateY(0);
+}
+
+.hero-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 50%;
+  padding: 60px;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .hero-banner-container {
+    width: 100%;
+    padding: 60px 40px;
+  }
+
+  .hero-banner-title {
+    font-size: 56px;
+  }
+
+  .hero-content-container {
+    width: 100%;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-banner-container {
+    padding: 40px 20px;
+  }
+
+  .hero-banner-title {
+    font-size: 42px;
+  }
+
+  .hero-banner-description {
+    font-size: 18px;
+  }
+
+  .hero-banner-cta {
+    font-size: 18px;
+    padding: 14px 40px;
+  }
+
+  .hero-content-container {
+    padding: 30px 20px;
+  }
+}
