@@ -3,6 +3,7 @@
   position: relative;
   min-height: 600px;
   background-color: var(--brand-red);
+  display:none;
 }
 
 .hero-banner-container {
