@@ -1,3 +1,31 @@
+:root {
+  /* Typography Sizes */
+  --font-size-hero-title: 72px;
+  --font-size-hero-desc: 20px;
+  --font-size-header-menu: 20px;
+  --font-size-mega-menu-item: 25px;
+  --font-size-beer-name: 23px;
+
+  /* Spacing */
+  --spacing-header-padding: 84px;
+  --spacing-hero-padding: 80px 60px;
+  --spacing-hero-title-margin: 30px;
+  --spacing-hero-desc-margin: 40px;
+  --spacing-mega-menu-padding: 90px;
+
+  /* Sizing */
+  --size-header-height: 92px;
+  --size-hero-min-height: 600px;
+  --size-logo-width: 110px;
+
+  /* Borders */
+  --border-radius-cta: 50px;
+
+  /* Shadows */
+  --shadow-header: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-cta-hover: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
 .app-container {
   min-height: 100vh;
   display: flex;
