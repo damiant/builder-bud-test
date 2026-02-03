@@ -7,6 +7,7 @@ import FindABud from './components/FindABud';
 import OurBeersTop from './components/OurBeersTop';
 import OurBeer from './components/OurBeer';
 import Footer from './components/Footer';
+import ClydesdalesHero from './components/ClydesdalesHero';
 
 // Register components
 Builder.registerComponent(Header, {
@@ -61,6 +62,26 @@ Builder.registerComponent(Footer, {
   name: 'Footer',
 });
 
+Builder.registerComponent(ClydesdalesHero, {
+  name: 'ClydesdalesHero',
+  inputs: [
+    { name: 'title', type: 'string', defaultValue: 'American Icons Since 1933' },
+    {
+      name: 'description',
+      type: 'string',
+      defaultValue: 'Go to the Clydesdales page for schedule, tours, and origin details.',
+    },
+    { name: 'buttonText', type: 'string', defaultValue: 'Learn More' },
+    {
+      name: 'imageUrl',
+      type: 'file',
+      allowedFileTypes: ['jpeg', 'jpg', 'png', 'svg', 'webp'],
+      defaultValue:
+        'https://cdn.builder.io/api/v1/image/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2F6ec9f624507849c782c2169bd9c44410?format=webp&width=800&height=1200',
+    },
+  ],
+});
+
 // Register insert menu
 Builder.register('insertMenu', {
   name: 'Our components',
@@ -73,5 +94,6 @@ Builder.register('insertMenu', {
     { name: 'OurBeersTop' },
     { name: 'OurBeer' },
     { name: 'Footer' },
+    { name: 'ClydesdalesHero' },
   ],
 });
