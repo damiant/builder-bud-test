@@ -1,11 +1,11 @@
 ---
 name: builder-publish
-description: Integrate Builder.io's publish and devtools into a website. Use this skill to (1) Install and configure Builder DevTools, (2) Sync components from Figma to Builder using 'figma publish', (3) Set up environment variables for Builder integration.
+description: Integrate Builder.io's devtools into a website. Use this skill to (1) Install and configure Builder DevTools, (2) Registers components and Design Tokens, (3) Set up environment variables for Builder integration.
 ---
 
 # Builder Publish & DevTools Integration
 
-This skill guides you through integrating Builder.io DevTools and using the publish command to sync component mappings.
+This skill guides you through integrating Builder.io DevTools and registering components or design tokens.
 
 ## Quick Start
 
@@ -33,15 +33,19 @@ Start your development server with DevTools enabled. For many frameworks, this i
 npx builder-dev-tools
 ```
 
-### Register Design Tokens
+### 4. Register Design Tokens
+This is an optional step you can ask the user if they would like to do. It will register design tokens (essentially css variables) that appear in the Builder Design Tab and allow selection of elements such as spacing,fonts, sizes rather than the user manually entering values.
 
-Ask the user if they would like to register design tokens. This operation will allow only design tokens that have been registered to be used in the design tab. To register design tokens follow references/design-tokens.md
+Follow the steps in references/design-tokens.md to register design tokens.
 
-### Register components
+### 5. Register Components
 
-Ask the user if they would like to register components. If they answer yes, then review the code to find the list of components. Any components that are not registered using Builder.registerComponent may be components the user wants to register. To register components follow references/register-components.md
+### Common Flags:
 
-## Resources
+- `--dryrun`: Validate mappings without publishing.
+- `--force`: Publish even with errors.
+- `--verbose`: Detailed output.
 
-- **References**: Framework-specific setup guides can be found in [references/frameworks.md](references/frameworks.md).
-- **Scripts**: A convenience script for publishing is available in [scripts/publish.sh](scripts/publish.sh).
+## Framework Specific Setup
+
+For detailed instructions on setting up DevTools with specific frameworks (Next.js, React, Vite, etc.), see [references/frameworks.md](references/frameworks.md).

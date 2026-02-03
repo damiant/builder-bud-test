@@ -60,6 +60,8 @@ skill-name/
     └── assets/           - Files used in output (templates, icons, fonts, etc.)
 ```
 
+Important: Skills are located in the folder `.builder/skills`.
+
 #### SKILL.md (required)
 
 Every SKILL.md consists of:
