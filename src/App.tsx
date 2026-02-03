@@ -16,6 +16,7 @@ function App() {
         <WhatsNew />
         <OurBeers />
         <FindABud />
+        <ClydesdalesHero />
       </main>
       <Footer />
     </div>
