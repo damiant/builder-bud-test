@@ -10,6 +10,30 @@
   margin-top: 80px; /* Space for the overlapping image */
 }
 
+/* Compact styles for 6-column layout on desktop */
+@media (min-width: 1201px) {
+  .our-beer-card {
+    padding: 100px 15px 25px;
+  }
+
+  .beer-image-wrapper {
+    width: 120px;
+    height: 180px;
+    top: -80px;
+  }
+
+  .beer-card-title {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+
+  .beer-card-description,
+  .beer-card-abv,
+  .beer-card-details {
+    font-size: 0.9rem;
+  }
+}
+
 .beer-image-wrapper {
   position: absolute;
   top: -100px;
