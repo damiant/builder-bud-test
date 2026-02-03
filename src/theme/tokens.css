@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
+@font-face {
+  font-family: 'Bud Crafted';
+  src: url('https://cdn.builder.io/o/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2F1a19c11a9ad64aedb3929bf148757a0e?alt=media&token=dfa3d2c2-3614-4100-a52f-dccfd6f783e3&apiKey=02c8915fddb94a1bb00e9fe3d6b7cc9a') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* Brand Palette */
   --brand-red: rgb(207, 10, 44);
