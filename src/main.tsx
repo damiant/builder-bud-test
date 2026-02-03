@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { Builder } from '@builder.io/react';
 import './index.css';
 import App from './App.tsx';
-import { editorSettings } from '../builder.config.ts';
+import { editorSettings } from './builder-settings.ts';
 
 Builder.register('editor.settings', editorSettings);
 
