@@ -33,6 +33,8 @@ npx builder-dev-tools
 ### Register Design Tokens
 Ask the user if they would like to register design tokens. This operation will allow only design tokens that have been registered to be used in the design tab. To register design tokens follow references/design-tokens.md
 
+### Register components
+Ask the user if they would like to register components. If they answer yes, then review the code to find the list of components. Any components that are not registered using Builder.registerComponent may be components the user wants to register. To register components follow references/register-components.md
 
 ## Resources
 
