@@ -1,7 +1,6 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
 import WhatsNew from './components/WhatsNew';
-import OurBeersTop from './components/OurBeersTop';
 import OurBeers from './components/OurBeers';
 import './App.css';
 
