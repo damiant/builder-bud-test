@@ -10,6 +10,7 @@ This skill guides you through integrating Builder.io DevTools and using the publ
 ## Quick Start
 
 ### 1. Install DevTools
+
 Install the `@builder.io/dev-tools` package as a dev dependency:
 
 ```bash
@@ -17,6 +18,7 @@ npm install --save-dev @builder.io/dev-tools
 ```
 
 ### 2. Set Up Environment Variables
+
 Add your Builder Public API Key to your `.env` file:
 
 ```env
@@ -24,6 +26,7 @@ BUILDER_PUBLIC_KEY=your_public_api_key_here
 ```
 
 ### 3. Run DevTools
+
 Start your development server with DevTools enabled. For many frameworks, this is done automatically once installed, or you can run:
 
 ```bash
@@ -39,6 +42,7 @@ npx "@builder.io/dev-tools@latest" figma publish
 ```
 
 ### Common Flags:
+
 - `--dryrun`: Validate mappings without publishing.
 - `--force`: Publish even with errors.
 - `--verbose`: Detailed output.
