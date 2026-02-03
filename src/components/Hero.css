@@ -23,7 +23,7 @@
   font-family: var(--font-brand);
   font-size: var(--font-size-hero-title);
   font-weight: 700;
-  line-height: 1.1;
+  line-height: var(--line-height-hero-title);
   margin: 0 0 var(--spacing-hero-title-margin) 0;
 }
 
@@ -31,7 +31,7 @@
   color: var(--brand-white);
   font-family: 'Franklin Gothic Book Regular', sans-serif;
   font-size: var(--font-size-hero-desc);
-  line-height: 1.5;
+  line-height: var(--line-height-base);
   margin: 0 0 var(--spacing-hero-desc-margin) 0;
 }
 
@@ -44,10 +44,10 @@
   font-family: 'Franklin Gothic Book Regular', sans-serif;
   font-size: var(--font-size-hero-desc);
   font-weight: 600;
-  padding: 16px 48px;
+  padding: var(--spacing-cta-padding);
   transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+    transform var(--transition-base) ease,
+    box-shadow var(--transition-base) ease;
 }
 
 .hero-banner-cta:hover {
