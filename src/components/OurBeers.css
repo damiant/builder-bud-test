@@ -1,7 +1,10 @@
 .our-beers-section {
   width: 100%;
-  padding: 60px 20px;
-  background-color: var(--brand-white);
+  padding: 100px 20px;
+  background-image: url('https://cdn.builder.io/api/v1/image/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2Fc52121ecc4054de197a84847c39ac588?format=webp&width=800&height=1200');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
