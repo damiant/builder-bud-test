@@ -43,17 +43,50 @@ export const editorSettings = {
       { name: 'Medium', value: 'var(--size-medium, 18px)' },
       { name: 'Small', value: 'var(--size-small, 15px)' },
     ],
+    lineHeight: [
+      { name: 'Header', value: 'var(--line-height-header)' },
+      { name: 'Mega Menu', value: 'var(--line-height-mega-menu)' },
+      { name: 'Hero Title', value: 'var(--line-height-hero-title)' },
+      { name: 'Base', value: 'var(--line-height-base)' },
+    ],
     spacing: [
       { name: 'Header Padding', value: 'var(--spacing-header-padding)' },
       { name: 'Hero Padding', value: 'var(--spacing-hero-padding)' },
       { name: 'Hero Title Margin', value: 'var(--spacing-hero-title-margin)' },
       { name: 'Hero Desc Margin', value: 'var(--spacing-hero-desc-margin)' },
       { name: 'Mega Menu Padding', value: 'var(--spacing-mega-menu-padding)' },
+      { name: 'Nav Padding', value: 'var(--spacing-nav-padding)' },
+      { name: 'Nav Gap', value: 'var(--spacing-nav-gap)' },
+      { name: 'Social Gap', value: 'var(--spacing-social-gap)' },
+      { name: 'Menu Gap', value: 'var(--spacing-menu-gap)' },
+      {
+        name: 'Mega Menu Content Gap',
+        value: 'var(--spacing-mega-menu-content-gap)',
+      },
+      {
+        name: 'Beer Grid Container Padding',
+        value: 'var(--spacing-beer-grid-container-padding)',
+      },
+      {
+        name: 'Beer Grid Header Margin',
+        value: 'var(--spacing-beer-grid-header-margin)',
+      },
+      { name: 'Beer Grid Gap', value: 'var(--spacing-beer-grid-gap)' },
+      { name: 'Logo Offset', value: 'var(--spacing-logo-offset)' },
+      { name: 'CTA Padding', value: 'var(--spacing-cta-padding)' },
       { name: 'XLarge', value: 'var(--space-xlarge, 46px)' },
       { name: 'Large', value: 'var(--space-large, 24px)' },
       { name: 'Medium', value: 'var(--space-medium, 18px)' },
       { name: 'Small', value: 'var(--space-small, 15px)' },
       { name: 'None', value: 'var(--space-none, 0px)' },
+    ],
+    sizing: [
+      { name: 'Header Height', value: 'var(--size-header-height)' },
+      { name: 'Hero Min Height', value: 'var(--size-hero-min-height)' },
+      { name: 'Logo Width', value: 'var(--size-logo-width)' },
+      { name: 'Icon Base', value: 'var(--size-icon-base)' },
+      { name: 'Menu Bar Height', value: 'var(--size-menu-bar-height)' },
+      { name: 'Menu Bar Width', value: 'var(--size-menu-bar-width)' },
     ],
     gap: [
       { name: 'XLarge', value: 'var(--space-xlarge, 46px)' },
@@ -64,12 +97,21 @@ export const editorSettings = {
     ],
     borderRadius: [
       { name: 'CTA', value: 'var(--border-radius-cta)' },
+      { name: 'Base', value: 'var(--border-radius-base)' },
       { name: 'Medium', value: 'var(--border-radius-medium, 10px)' },
       { name: 'None', value: 'var(--space-none, 0px)' },
     ],
     shadows: [
       { name: 'Header', value: 'var(--shadow-header)' },
       { name: 'CTA Hover', value: 'var(--shadow-cta-hover)' },
+    ],
+    transitions: [
+      { name: 'Fast', value: 'var(--transition-fast)' },
+      { name: 'Base', value: 'var(--transition-base)' },
+    ],
+    zIndices: [
+      { name: 'Header', value: 'var(--z-index-header)' },
+      { name: 'Overlay', value: 'var(--z-index-overlay)' },
     ],
   },
 };
