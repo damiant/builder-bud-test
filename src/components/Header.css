@@ -2,17 +2,17 @@
   left: 0;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: var(--z-index-header);
 }
 
 .main-header {
   align-items: center;
   background-color: var(--brand-red);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-header);
   display: flex;
-  height: 92px;
+  height: var(--size-header-height);
   justify-content: space-between;
-  padding: 0 84px;
+  padding: 0 var(--spacing-header-padding);
 }
 
 .header-left {
@@ -28,31 +28,31 @@
 }
 
 .menu-icon-wrapper {
-  height: 32px;
-  transition: 0.25s;
-  width: 32px;
+  height: var(--size-icon-base);
+  transition: var(--transition-fast);
+  width: var(--size-icon-base);
   cursor: pointer;
 }
 
 .menu-icon-bar {
   background-color: var(--brand-white);
-  border-radius: 16px;
-  height: 3px;
+  border-radius: var(--border-radius-base);
+  height: var(--size-menu-bar-height);
   position: absolute;
   top: 16px;
-  transition: 0.25s;
-  width: 28px;
+  transition: var(--transition-fast);
+  width: var(--size-menu-bar-width);
 }
 
 .menu-icon-bar::before,
 .menu-icon-bar::after {
   content: '';
   background-color: var(--brand-white);
-  border-radius: 16px;
-  height: 3px;
+  border-radius: var(--border-radius-base);
+  height: var(--size-menu-bar-height);
   position: absolute;
-  transition: 0.25s;
-  width: 28px;
+  transition: var(--transition-fast);
+  width: var(--size-menu-bar-width);
 }
 
 .menu-icon-bar::before {
@@ -81,23 +81,23 @@
   color: var(--brand-white);
   cursor: pointer;
   font-family: var(--font-body);
-  font-size: 20px;
+  font-size: var(--font-size-header-menu);
   font-weight: 700;
-  line-height: 26px;
-  padding: 14px 8px;
+  line-height: var(--line-height-header);
+  padding: var(--spacing-nav-padding);
   text-align: center;
   text-transform: uppercase;
 }
 
 .logo-link {
-  transform: translateX(120px);
+  transform: translateX(var(--spacing-logo-offset));
 }
 
 .logo-img {
   display: inline;
   margin: auto;
   padding-bottom: 3px;
-  width: 110px;
+  width: var(--size-logo-width);
 }
 
 .header-right {
@@ -117,11 +117,11 @@
   cursor: pointer;
   display: flex;
   font-family: var(--font-body);
-  font-size: 20px;
+  font-size: var(--font-size-header-menu);
   font-weight: 700;
-  gap: 6px;
-  line-height: 26px;
-  padding: 14px 8px;
+  gap: var(--spacing-nav-gap);
+  line-height: var(--line-height-header);
+  padding: var(--spacing-nav-padding);
   text-align: center;
   text-transform: uppercase;
 }
@@ -136,12 +136,12 @@
 }
 
 .lang-button {
-  font-size: 20px;
+  font-size: var(--font-size-header-menu);
 }
 
 .globe-icon {
-  width: 32px;
-  height: 32px;
+  width: var(--size-icon-base);
+  height: var(--size-icon-base);
 }
 
 .globe-icon path {
@@ -154,38 +154,38 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 8px 0px;
   color: var(--brand-white);
   display: flex;
-  gap: 16px;
+  gap: var(--spacing-menu-gap);
   justify-content: space-between;
   left: 0;
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  padding: 0 90px;
+  padding: 0 var(--spacing-mega-menu-padding);
   position: absolute;
-  top: 92px;
-  transition: all 0.3s ease-in-out;
+  top: var(--size-header-height);
+  transition: all var(--transition-base) ease-in-out;
   visibility: hidden;
   width: 100%;
-  z-index: 1000;
+  z-index: var(--z-index-overlay);
 }
 
 .mega-menu-overlay.open {
   max-height: 836px;
   opacity: 1;
-  padding: 30px 90px;
+  padding: 30px var(--spacing-mega-menu-padding);
   visibility: visible;
 }
 
 .mega-menu-content {
   display: flex;
   width: 100%;
-  gap: 40px;
+  gap: var(--spacing-mega-menu-content-gap);
 }
 
 .vertical-menu {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--spacing-menu-gap);
   min-width: 276px;
 }
 
@@ -202,10 +202,9 @@
   color: var(--brand-white);
   cursor: pointer;
   font-family: var(--font-brand);
-  font-size: 25px;
+  font-size: var(--font-size-mega-menu-item);
   font-weight: 700;
-  line-height: 32px;
-  text-align: left;
+  line-height: var(--line-height-mega-menu);
   padding: 0;
   text-transform: uppercase;
 }
@@ -220,7 +219,7 @@
 
 .social-links {
   display: flex;
-  gap: 10px;
+  gap: var(--spacing-social-gap);
   margin-top: 10px;
 }
 
@@ -231,18 +230,18 @@
 /* Beer Grid Styles */
 .beer-grid-container {
   flex-grow: 1;
-  padding-left: 50px;
+  padding-left: var(--spacing-beer-grid-container-padding);
 }
 
 .beer-grid-header {
-  margin-bottom: 20px;
+  margin-bottom: var(--spacing-beer-grid-header-margin);
 }
 
 .beer-grid-title {
   font-family: var(--font-brand);
-  font-size: 20px;
+  font-size: var(--font-size-header-menu);
   font-weight: 700;
-  line-height: 26px;
+  line-height: var(--line-height-header);
 }
 
 .beer-grid-divider {
@@ -253,7 +252,7 @@
 
 .beer-grid {
   display: grid;
-  gap: 38px 20px;
+  gap: var(--spacing-beer-grid-gap);
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -278,7 +277,7 @@
 .beer-name {
   color: var(--brand-white);
   font-family: var(--font-brand);
-  font-size: 23px;
+  font-size: var(--font-size-beer-name);
   font-weight: 700;
   margin-top: 8px;
   text-align: center;
