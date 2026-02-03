@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import HeroSection from './components/HeroSection';
 import './App.css';
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
     <div className="app-container">
       <Header />
       <main className="main-content">
-        {/* Rest of the content will be filled later */}
+        <HeroSection />
       </main>
     </div>
   );
