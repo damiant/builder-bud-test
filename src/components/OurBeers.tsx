@@ -36,7 +36,7 @@ const BEERS = [
     title: 'Budweiser Chelada',
     description: 'Budweiser Chelada With',
     abv: 'Clamato, 5.0% ABV',
-    imageUrl: 'https://cdn.builder.io/api/v1/image/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2F65e3a4b0ed1346c98bb09f448da65898?format=webp&width=800&height=1200',
+    imageUrl: 'https://cdn.builder.io/api/v1/image/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2F1c556691404c474cacd297e1135b1189?format=webp&width=800&height=1200',
   },
 ];
 
