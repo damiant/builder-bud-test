@@ -20,4 +20,14 @@ export default defineConfig({
       { name: 'Brand', value: 'var(--font-brand)' },
     ],
   },
+  components: [
+    {
+      name: 'Header',
+      path: './src/components/Header.tsx',
+    },
+    {
+      name: 'Hero',
+      path: './src/components/Hero.tsx',
+    },
+  ],
 });
