@@ -1,0 +1,192 @@
+.hero-section {
+  display: flex;
+  position: relative;
+  min-height: 600px;
+}
+
+.hero-banner-container {
+  background-color: var(--brand-red);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 60px;
+  position: relative;
+  width: 50%;
+}
+
+.hero-banner-content {
+  max-width: 600px;
+}
+
+.hero-banner-title {
+  color: var(--brand-white);
+  font-family: var(--font-brand);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 30px 0;
+}
+
+.hero-banner-description {
+  color: var(--brand-white);
+  font-family: "Franklin Gothic Book Regular", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0 0 40px 0;
+}
+
+.hero-banner-cta {
+  background-color: var(--brand-white);
+  border: none;
+  border-radius: 50px;
+  color: var(--brand-red);
+  cursor: pointer;
+  font-family: "Franklin Gothic Book Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 16px 48px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-banner-cta:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.hero-banner-cta:active {
+  transform: translateY(0);
+}
+
+.hero-video-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+}
+
+.video-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.hero-video {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.hero-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 50%;
+  padding: 60px;
+}
+
+.hero-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 96px;
+  max-width: 527px;
+  padding: 0 20px;
+  position: relative;
+  width: 90%;
+}
+
+.hero-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.hero-title {
+  color: var(--brand-red);
+  font-family: var(--font-brand);
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hero-description-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  position: relative;
+}
+
+.hero-description {
+  font-family: "Franklin Gothic Book Regular", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .hero-banner-container {
+    width: 100%;
+    padding: 60px 40px;
+  }
+
+  .hero-banner-title {
+    font-size: 56px;
+  }
+
+  .hero-video-container {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .hero-content-container {
+    width: 100%;
+    padding: 40px;
+  }
+
+  .hero-text-wrapper {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-banner-container {
+    padding: 40px 20px;
+  }
+
+  .hero-banner-title {
+    font-size: 42px;
+  }
+
+  .hero-banner-description {
+    font-size: 18px;
+  }
+
+  .hero-banner-cta {
+    font-size: 18px;
+    padding: 14px 40px;
+  }
+
+  .hero-content-container {
+    padding: 30px 20px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-description {
+    font-size: 18px;
+  }
+}
