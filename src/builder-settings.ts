@@ -32,6 +32,11 @@ export const editorSettings = {
       { name: 'Alternative', value: 'Arial, Helvetica, sans-serif' },
     ],
     fontSize: [
+      { name: 'Hero Title', value: 'var(--font-size-hero-title)' },
+      { name: 'Mega Menu Item', value: 'var(--font-size-mega-menu-item)' },
+      { name: 'Beer Name', value: 'var(--font-size-beer-name)' },
+      { name: 'Header Menu', value: 'var(--font-size-header-menu)' },
+      { name: 'Hero Description', value: 'var(--font-size-hero-desc)' },
       { name: 'Largest', value: 'var(--size-xxlarge, 57px)' },
       { name: 'Larger', value: 'var(--size-xlarge, 46px)' },
       { name: 'Large', value: 'var(--size-large, 24px)' },
@@ -39,6 +44,11 @@ export const editorSettings = {
       { name: 'Small', value: 'var(--size-small, 15px)' },
     ],
     spacing: [
+      { name: 'Header Padding', value: 'var(--spacing-header-padding)' },
+      { name: 'Hero Padding', value: 'var(--spacing-hero-padding)' },
+      { name: 'Hero Title Margin', value: 'var(--spacing-hero-title-margin)' },
+      { name: 'Hero Desc Margin', value: 'var(--spacing-hero-desc-margin)' },
+      { name: 'Mega Menu Padding', value: 'var(--spacing-mega-menu-padding)' },
       { name: 'XLarge', value: 'var(--space-xlarge, 46px)' },
       { name: 'Large', value: 'var(--space-large, 24px)' },
       { name: 'Medium', value: 'var(--space-medium, 18px)' },
@@ -53,8 +63,13 @@ export const editorSettings = {
       { name: 'None', value: 'var(--space-none, 0px)' },
     ],
     borderRadius: [
+      { name: 'CTA', value: 'var(--border-radius-cta)' },
       { name: 'Medium', value: 'var(--border-radius-medium, 10px)' },
       { name: 'None', value: 'var(--space-none, 0px)' },
+    ],
+    shadows: [
+      { name: 'Header', value: 'var(--shadow-header)' },
+      { name: 'CTA Hover', value: 'var(--shadow-cta-hover)' },
     ],
   },
 };
