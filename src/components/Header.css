@@ -8,11 +8,11 @@
 .main-header {
   align-items: center;
   background-color: var(--brand-red);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-header);
   display: flex;
-  height: 92px;
+  height: var(--size-header-height);
   justify-content: space-between;
-  padding: 0 84px;
+  padding: 0 var(--spacing-header-padding);
 }
 
 .header-left {
@@ -81,7 +81,7 @@
   color: var(--brand-white);
   cursor: pointer;
   font-family: var(--font-body);
-  font-size: 20px;
+  font-size: var(--font-size-header-menu);
   font-weight: 700;
   line-height: 26px;
   padding: 14px 8px;
@@ -97,7 +97,7 @@
   display: inline;
   margin: auto;
   padding-bottom: 3px;
-  width: 110px;
+  width: var(--size-logo-width);
 }
 
 .header-right {
@@ -117,7 +117,7 @@
   cursor: pointer;
   display: flex;
   font-family: var(--font-body);
-  font-size: 20px;
+  font-size: var(--font-size-header-menu);
   font-weight: 700;
   gap: 6px;
   line-height: 26px;
@@ -136,7 +136,7 @@
 }
 
 .lang-button {
-  font-size: 20px;
+  font-size: var(--font-size-header-menu);
 }
 
 .globe-icon {
@@ -160,9 +160,9 @@
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  padding: 0 90px;
+  padding: 0 var(--spacing-mega-menu-padding);
   position: absolute;
-  top: 92px;
+  top: var(--size-header-height);
   transition: all 0.3s ease-in-out;
   visibility: hidden;
   width: 100%;
@@ -172,7 +172,7 @@
 .mega-menu-overlay.open {
   max-height: 836px;
   opacity: 1;
-  padding: 30px 90px;
+  padding: 30px var(--spacing-mega-menu-padding);
   visibility: visible;
 }
 
@@ -202,7 +202,7 @@
   color: var(--brand-white);
   cursor: pointer;
   font-family: var(--font-brand);
-  font-size: 25px;
+  font-size: var(--font-size-mega-menu-item);
   font-weight: 700;
   line-height: 32px;
   text-align: left;
@@ -240,7 +240,7 @@
 
 .beer-grid-title {
   font-family: var(--font-brand);
-  font-size: 20px;
+  font-size: var(--font-size-header-menu);
   font-weight: 700;
   line-height: 26px;
 }
@@ -278,7 +278,7 @@
 .beer-name {
   color: var(--brand-white);
   font-family: var(--font-brand);
-  font-size: 23px;
+  font-size: var(--font-size-beer-name);
   font-weight: 700;
   margin-top: 8px;
   text-align: center;
