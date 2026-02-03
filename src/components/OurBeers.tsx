@@ -13,7 +13,7 @@ const BEERS = [
     title: 'Budweiser Zero',
     description: 'Non-Alcoholic,',
     abv: '0.0% ABV',
-    imageUrl: 'https://cdn.builder.io/api/v1/image/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2Ffea696736857464da574eb27710ed47d?format=webp&width=800&height=1200',
+    imageUrl: 'https://cdn.builder.io/api/v1/image/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2Fdc721d7e556744e9950b2e850d08c4d2?format=webp&width=800&height=1200',
   },
   {
     title: 'Budweiser Zero',
