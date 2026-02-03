@@ -25,6 +25,11 @@
   --pastel-text: #4a4a4a;
   --pastel-text-secondary: #7a7a7a;
 
+  /* Footer Palette */
+  --footer-bg: #0a1b3d;
+  --footer-text: #ffffff;
+  --footer-divider: #ffffff;
+
   /* Fonts */
   --font-script: 'Dancing Script', cursive;
   --font-brand: 'Bud Crafted', sans-serif;
