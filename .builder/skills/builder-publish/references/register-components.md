@@ -1,6 +1,8 @@
 # Registering components
 
 To use your custom components in the Builder Visual Editor, you need to take a couple of minimal steps in your codebase.
+- Call `Builder.registerComponent` with the component (use the examples below for reference).
+- Call `Builder.register('insertMenu'` with the component (see example below for reference).
 
 ### Reference Documentation
 - https://www.builder.io/c/docs/custom-components-setup
@@ -21,6 +23,20 @@ Builder.registerComponent(Counter, {
     },
   ],
 });
+```
+
+### Registering in the menu
+The following code will register the component into the insert menu.
+
+```typescript
+import { Builder } from '@builder.io/react';
+
+Builder.register('insertMenu', {
+  name: 'Our components',
+  items: [
+    { name: 'Hero', item: 'Hero' }
+  ],
+})
 ```
 
 ### Example with Children
