@@ -1,7 +1,7 @@
 @import './theme/tokens.css';
 
 :root {
-  --font-heading: 'Poppins', sans-serif;
+  --font-heading: var(--font-brand);
   --font-body: 'Inter', sans-serif;
   --color-primary: #65a30d;
   --color-primary-hover: #4d7c0f;
