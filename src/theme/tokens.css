@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 :root {
+  /* Brand Palette */
+  --brand-red: rgb(207, 10, 44);
+  --brand-white: rgb(255, 255, 255);
+  --brand-blue: rgb(0, 0, 238);
+
   /* Pastel Palette */
   --pastel-primary: #FFC8DD;
   --pastel-secondary: #A2D2FF;
@@ -13,4 +18,5 @@
 
   /* Fonts */
   --font-script: 'Dancing Script', cursive;
+  --font-brand: "Bud Crafted", sans-serif;
 }
