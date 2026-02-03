@@ -30,7 +30,9 @@
 }
 
 .whats-new-subtitle {
-  font-family: var(--font-brand); /* Image seems to use the brand font for campaigns too, but user asked for script earlier. Image shows sans-serif/brand font. I'll stick to what looks more like the image. */
+  font-family: var(
+    --font-brand
+  ); /* Image seems to use the brand font for campaigns too, but user asked for script earlier. Image shows sans-serif/brand font. I'll stick to what looks more like the image. */
   font-size: 1.5rem;
   color: var(--brand-white);
   margin: 0;

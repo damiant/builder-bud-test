@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   max-width: 350px;
-  background: linear-gradient(180deg, #042D54 0%, #000B1E 100%);
+  background: linear-gradient(180deg, #042d54 0%, #000b1e 100%);
   border-radius: 24px;
   padding: 120px 20px 30px;
   text-align: center;
@@ -77,12 +77,12 @@
     max-width: 280px;
     padding-top: 100px;
   }
-  
+
   .beer-image-wrapper {
     width: 140px;
     top: -60px;
   }
-  
+
   .beer-card-title {
     font-size: 2rem;
   }
