@@ -8,6 +8,7 @@ import OurBeersTop from './components/OurBeersTop';
 import OurBeer from './components/OurBeer';
 import Footer from './components/Footer';
 import LeftHero from './components/LeftHero';
+import RightHero from './components/RightHero';
 
 // Register components
 Builder.registerComponent(Header, {
@@ -82,6 +83,27 @@ Builder.registerComponent(LeftHero, {
   ],
 });
 
+Builder.registerComponent(RightHero, {
+  name: 'RightHero',
+  inputs: [
+    { name: 'title', type: 'string', defaultValue: 'Originals, Not Souvenirs' },
+    {
+      name: 'description',
+      type: 'string',
+      defaultValue:
+        'Budweiser originals you actually wear, hats and shirts built for daily use. Shop the rest of the lineup: hoodies, jackets, beanies, bags, and more.',
+    },
+    { name: 'buttonText', type: 'string', defaultValue: 'Shop For Merch Here' },
+    {
+      name: 'imageUrl',
+      type: 'file',
+      allowedFileTypes: ['jpeg', 'jpg', 'png', 'svg', 'webp'],
+      defaultValue:
+        'https://cdn.builder.io/api/v1/image/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2F7fd13bd84bb44641827e8febc58991c7?format=webp&width=800&height=1200',
+    },
+  ],
+});
+
 // Register insert menu
 Builder.register('insertMenu', {
   name: 'Our components',
@@ -95,5 +117,6 @@ Builder.register('insertMenu', {
     { name: 'OurBeer' },
     { name: 'Footer' },
     { name: 'LeftHero' },
+    { name: 'RightHero' },
   ],
 });
