@@ -40,5 +40,9 @@ export default defineConfig({
       name: 'LeftHero',
       path: './src/components/LeftHero.tsx',
     },
+    {
+      name: 'RightHero',
+      path: './src/components/RightHero.tsx',
+    },
   ],
 });
