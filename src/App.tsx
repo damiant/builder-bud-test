@@ -8,6 +8,7 @@ import FindABud from './components/FindABud';
 import LeftHero from './components/LeftHero';
 import RightHero from './components/RightHero';
 import Footer from './components/Footer';
+import AgeGate from './components/AgeGate';
 import { BuilderPage } from './builder-page';
 import './App.css';
 
@@ -26,6 +27,7 @@ const Home = () => (
 function App() {
   return (
     <div className="app-container">
+      <AgeGate />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
