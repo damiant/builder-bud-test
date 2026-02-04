@@ -23,6 +23,8 @@ const AgeGate: React.FC = () => {
     return age;
   };
 
+  const isIframe = typeof window !== 'undefined' && window.self !== window.top;
+
   const handleEnter = (e: React.FormEvent) => {
     e.preventDefault();
     const m = parseInt(month);
@@ -46,7 +48,7 @@ const AgeGate: React.FC = () => {
     }
   };
 
-  if (status === 'verified') {
+  if (status === 'verified' || isIframe) {
     return null;
   }
 
