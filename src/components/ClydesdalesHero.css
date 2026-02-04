@@ -1,7 +1,7 @@
 .clydesdales-hero {
   display: flex;
   width: 100%;
-  min-height: 450px;
+  height: 400px;
   background-color: #f8f9fa;
   overflow: hidden;
 }
