@@ -3,7 +3,7 @@ import Hero from './components/Hero';
 import WhatsNew from './components/WhatsNew';
 import OurBeers from './components/OurBeers';
 import FindABud from './components/FindABud';
-import ClydesdalesHero from './components/ClydesdalesHero';
+import LeftHero from './components/LeftHero';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -16,7 +16,7 @@ function App() {
         <WhatsNew />
         <OurBeers />
         <FindABud />
-        <ClydesdalesHero />
+        <LeftHero />
       </main>
       <Footer />
     </div>
