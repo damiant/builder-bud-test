@@ -2,7 +2,8 @@
 
 @font-face {
   font-family: 'Bud Crafted';
-  src: url('https://cdn.builder.io/o/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2F1a19c11a9ad64aedb3929bf148757a0e?alt=media&token=dfa3d2c2-3614-4100-a52f-dccfd6f783e3&apiKey=02c8915fddb94a1bb00e9fe3d6b7cc9a') format('opentype');
+  src: url('https://cdn.builder.io/o/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2F1a19c11a9ad64aedb3929bf148757a0e?alt=media&token=dfa3d2c2-3614-4100-a52f-dccfd6f783e3&apiKey=02c8915fddb94a1bb00e9fe3d6b7cc9a')
+    format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -15,16 +16,24 @@
   --brand-blue: rgb(0, 0, 238);
 
   /* Pastel Palette */
-  --pastel-primary: #FFC8DD;
-  --pastel-secondary: #A2D2FF;
-  --pastel-accent: #CDB4DB;
-  --pastel-success: #B9FBC0;
-  --pastel-warning: #FFFFD1;
-  --pastel-bg: #FFF9F9;
-  --pastel-text: #4A4A4A;
-  --pastel-text-secondary: #7A7A7A;
+  --pastel-primary: #ffc8dd;
+  --pastel-secondary: #a2d2ff;
+  --pastel-accent: #cdb4db;
+  --pastel-success: #b9fbc0;
+  --pastel-warning: #ffffd1;
+  --pastel-bg: #fff9f9;
+  --pastel-text: #4a4a4a;
+  --pastel-text-secondary: #7a7a7a;
+
+  /* Footer Palette */
+  --footer-bg: #0a1b3d;
+  --footer-text: #ffffff;
+  --footer-divider: #ffffff;
 
   /* Fonts */
   --font-script: 'Dancing Script', cursive;
-  --font-brand: "Bud Crafted", sans-serif;
+  --font-brand: 'Bud Crafted', sans-serif;
+
+  /* Assets */
+  --whats-new-bg: url('https://cdn.builder.io/api/v1/image/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2F3e175ecc687743ed8e428658650560f6?format=webp&width=800&height=1200');
 }

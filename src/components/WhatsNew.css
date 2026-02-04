@@ -1,0 +1,79 @@
+.whats-new-section {
+  width: 100%;
+  background-image: var(--whats-new-bg);
+  background-repeat: repeat;
+  background-size: auto; /* Ensure it repeats at original or specified size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.whats-new-container {
+  padding: 20px 40px;
+  text-align: center;
+  max-width: 1200px;
+  width: 90%;
+}
+
+.whats-new-header {
+  margin-bottom: 40px;
+}
+
+.whats-new-title {
+  font-family: var(--font-brand);
+  font-size: 3.5rem;
+  color: var(--brand-white);
+  margin-bottom: 8px;
+  text-transform: capitalize; /* Matches the image text "What's New" */
+}
+
+.whats-new-subtitle {
+  font-family: var(
+    --font-brand
+  ); /* Image seems to use the brand font for campaigns too, but user asked for script earlier. Image shows sans-serif/brand font. I'll stick to what looks more like the image. */
+  font-size: 1.5rem;
+  color: var(--brand-white);
+  margin: 0;
+  font-weight: bold;
+}
+
+.whats-new-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.whats-new-item {
+  overflow: hidden;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.whats-new-item:hover {
+  transform: translateY(-5px);
+}
+
+.whats-new-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .whats-new-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .whats-new-title {
+    font-size: 2.5rem;
+  }
+
+  .whats-new-subtitle {
+    font-size: 2rem;
+  }
+}

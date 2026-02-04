@@ -1,0 +1,53 @@
+.our-beers-section {
+  width: 100%;
+  padding: 100px 20px;
+  background-image: url('https://cdn.builder.io/api/v1/image/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2Fc52121ecc4054de197a84847c39ac588?format=webp&width=800&height=1200');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-beers-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.our-beers-title {
+  font-family: var(--font-brand);
+  font-size: 4rem;
+  color: #001633; /* Dark blue matching the cards */
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: bold;
+}
+
+.our-beers-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 100px 15px; /* Reduced gap */
+  max-width: 1400px;
+  width: 95%;
+  justify-items: center;
+  padding-top: 40px;
+}
+
+@media (max-width: 1200px) {
+  .our-beers-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 140px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-beers-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 across on mobile */
+    gap: 100px 10px;
+  }
+
+  .our-beers-title {
+    font-size: 3rem;
+  }
+}

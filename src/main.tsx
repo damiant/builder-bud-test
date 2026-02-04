@@ -4,6 +4,7 @@ import { Builder } from '@builder.io/react';
 import './index.css';
 import App from './App.tsx';
 import { editorSettings } from './builder-settings.ts';
+import './builder-registry';
 
 Builder.register('editor.settings', editorSettings);
 

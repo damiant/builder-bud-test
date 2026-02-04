@@ -12,5 +12,37 @@ export default defineConfig({
       name: 'Hero',
       path: './src/components/Hero.tsx',
     },
+    {
+      name: 'WhatsNew',
+      path: './src/components/WhatsNew.tsx',
+    },
+    {
+      name: 'OurBeers',
+      path: './src/components/OurBeers.tsx',
+    },
+    {
+      name: 'FindABud',
+      path: './src/components/FindABud.tsx',
+    },
+    {
+      name: 'OurBeersTop',
+      path: './src/components/OurBeersTop.tsx',
+    },
+    {
+      name: 'OurBeer',
+      path: './src/components/OurBeer.tsx',
+    },
+    {
+      name: 'Footer',
+      path: './src/components/Footer.tsx',
+    },
+    {
+      name: 'LeftHero',
+      path: './src/components/LeftHero.tsx',
+    },
+    {
+      name: 'RightHero',
+      path: './src/components/RightHero.tsx',
+    },
   ],
 });

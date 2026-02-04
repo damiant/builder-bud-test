@@ -1,0 +1,102 @@
+.clydesdales-hero {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+.clydesdales-image-container {
+  width: 40%;
+  position: relative;
+}
+
+.clydesdales-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.clydesdales-content-container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  padding: 60px 80px;
+}
+
+.clydesdales-content {
+  max-width: 500px;
+}
+
+.clydesdales-title {
+  font-family: var(--font-brand);
+  font-size: 48px;
+  color: #0a1b3d;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.clydesdales-description {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.clydesdales-cta {
+  background-color: var(--brand-red);
+  color: var(--brand-white);
+  border: none;
+  border-radius: 50px;
+  padding: 14px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform var(--transition-base) ease,
+    box-shadow var(--transition-base) ease;
+}
+
+.clydesdales-cta:hover {
+  box-shadow: 0 4px 12px rgba(207, 10, 44, 0.3);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .clydesdales-content-container {
+    padding: 40px 60px;
+  }
+
+  .clydesdales-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  .clydesdales-hero {
+    flex-direction: column;
+    height: auto;
+    min-height: auto;
+  }
+
+  .clydesdales-image-container {
+    width: 100%;
+    height: 300px;
+  }
+
+  .clydesdales-content-container {
+    width: 100%;
+    padding: 40px 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .clydesdales-title {
+    font-size: 32px;
+  }
+
+  .clydesdales-description {
+    font-size: 16px;
+  }
+}
