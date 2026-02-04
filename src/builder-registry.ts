@@ -62,6 +62,13 @@ Builder.registerComponent(WhatsNew, {
 
 Builder.registerComponent(OurBeers, {
   name: 'OurBeers',
+  inputs: [
+    {
+      name: 'title',
+      type: 'string',
+      defaultValue: 'Our Beers',
+    },
+  ],
 });
 
 Builder.registerComponent(FindABud, {
