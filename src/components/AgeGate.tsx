@@ -7,15 +7,10 @@ const AgeGate: React.FC = () => {
   const [month, setMonth] = useState('');
   const [day, setDay] = useState('');
   const [year, setYear] = useState('');
-  const [status, setStatus] = useState<string | null>(null);
+  const [status, setStatus] = useState<string | null>(() => {
+    return typeof window !== 'undefined' ? localStorage.getItem(AGE_GATE_KEY) : null;
+  });
   const [error, setError] = useState('');
-
-  useEffect(() => {
-    const savedStatus = localStorage.getItem(AGE_GATE_KEY);
-    if (savedStatus) {
-      setStatus(savedStatus);
-    }
-  }, []);
 
   const calculateAge = (m: number, d: number, y: number) => {
     const today = new Date();
