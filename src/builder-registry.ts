@@ -7,7 +7,7 @@ import FindABud from './components/FindABud';
 import OurBeersTop from './components/OurBeersTop';
 import OurBeer from './components/OurBeer';
 import Footer from './components/Footer';
-import ClydesdalesHero from './components/ClydesdalesHero';
+import LeftHero from './components/LeftHero';
 
 // Register components
 Builder.registerComponent(Header, {
@@ -62,8 +62,8 @@ Builder.registerComponent(Footer, {
   name: 'Footer',
 });
 
-Builder.registerComponent(ClydesdalesHero, {
-  name: 'ClydesdalesHero',
+Builder.registerComponent(LeftHero, {
+  name: 'LeftHero',
   inputs: [
     { name: 'title', type: 'string', defaultValue: 'American Icons Since 1933' },
     {
@@ -94,6 +94,6 @@ Builder.register('insertMenu', {
     { name: 'OurBeersTop' },
     { name: 'OurBeer' },
     { name: 'Footer' },
-    { name: 'ClydesdalesHero' },
+    { name: 'LeftHero' },
   ],
 });
