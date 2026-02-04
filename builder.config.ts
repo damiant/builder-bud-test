@@ -36,5 +36,9 @@ export default defineConfig({
       name: 'Footer',
       path: './src/components/Footer.tsx',
     },
+    {
+      name: 'ClydesdalesHero',
+      path: './src/components/ClydesdalesHero.tsx',
+    },
   ],
 });
