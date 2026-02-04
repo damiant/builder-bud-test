@@ -41,6 +41,10 @@ Builder.registerComponent(Hero, {
       type: 'string',
       defaultValue: 'Find Near You',
     },
+    {
+      name: 'ctaLink',
+      type: 'url',
+    },
   ],
 });
 
