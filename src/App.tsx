@@ -4,6 +4,7 @@ import WhatsNew from './components/WhatsNew';
 import OurBeers from './components/OurBeers';
 import FindABud from './components/FindABud';
 import LeftHero from './components/LeftHero';
+import RightHero from './components/RightHero';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -17,6 +18,7 @@ function App() {
         <OurBeers />
         <FindABud />
         <LeftHero />
+        <RightHero />
       </main>
       <Footer />
     </div>
