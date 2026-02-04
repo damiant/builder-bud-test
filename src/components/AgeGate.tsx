@@ -114,7 +114,7 @@ const AgeGate: React.FC = () => {
               <p className="age-gate-legal">
                 ©2026 Anheuser-Busch, Budweiser® Lager Beer, St. Louis MO. By submitting this form,
                 you agree to be bound by the <a href="#">Terms of Service</a> and{' '}
-                <a href="#">Privacy Policy</a>. Do Not Sell My Personal Information{' '}
+                <a href="#">Privacy Policy</a>. <a href="https://google.com">Do Not Sell My Personal Information</a>{' '}
                 <a href="#">Limit The Use Of My Sensitive Personal Information</a>
               </p>
               <p className="age-gate-warning">DO NOT SHARE THIS CONTENT WITH THOSE UNDER 21.</p>

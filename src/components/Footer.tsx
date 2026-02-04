@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
                   <a href="#">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="#">Do Not Sell My Personal Information</a>
+                  <a href="https://google.com">Do Not Sell My Personal Information</a>
                 </li>
               </ul>
             </div>
