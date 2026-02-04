@@ -6,7 +6,7 @@ interface HeroProps {
   title?: string;
   subtitle?: string;
   ctaText?: string;
-  ctaLink?: string;
+  CTALink?: string;
 }
 
 const Hero: React.FC<HeroProps> = ({
@@ -14,11 +14,11 @@ const Hero: React.FC<HeroProps> = ({
   title = 'The Great American Lager Since 1876',
   subtitle = "From steam-powered breweries to today's neighborhood bars, we've served generations through boom times, quiet years, and everything in between.",
   ctaText = 'Find Near You',
-  ctaLink,
+  CTALink,
 }) => {
   const handleCTAClick = () => {
-    if (ctaLink) {
-      window.open(ctaLink, '_blank', 'noopener,noreferrer');
+    if (CTALink) {
+      window.open(CTALink, '_blank', 'noopener,noreferrer');
     }
   };
 
