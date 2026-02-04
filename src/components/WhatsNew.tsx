@@ -1,13 +1,18 @@
 import React from 'react';
 import './WhatsNew.css';
 
-const WhatsNew: React.FC = () => {
+interface WhatsNewProps {
+  title?: string;
+  subtitle?: string;
+}
+
+const WhatsNew: React.FC<WhatsNewProps> = ({ title = "What's New", subtitle = 'Campaigns' }) => {
   return (
     <section className="whats-new-section">
       <div className="whats-new-container">
         <header className="whats-new-header">
-          <h2 className="whats-new-title">What's New</h2>
-          <p className="whats-new-subtitle">Campaigns</p>
+          <h2 className="whats-new-title">{title}</h2>
+          <p className="whats-new-subtitle">{subtitle}</p>
         </header>
         <div className="whats-new-grid">
           <div className="whats-new-item">
