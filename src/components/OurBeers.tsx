@@ -46,11 +46,15 @@ const BEERS = [
   },
 ];
 
-const OurBeers: React.FC = () => {
+interface OurBeersProps {
+  title?: string;
+}
+
+const OurBeers: React.FC<OurBeersProps> = ({ title = 'Our Beers' }) => {
   return (
     <section className="our-beers-section">
       <div className="our-beers-header">
-        <h2 className="our-beers-title">Our Beers</h2>
+        <h2 className="our-beers-title">{title}</h2>
       </div>
       <div className="our-beers-grid">
         {BEERS.map((beer, index) => (
