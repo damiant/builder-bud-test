@@ -25,15 +25,50 @@ Builder.registerComponent(Hero, {
       defaultValue:
         'https://cdn.builder.io/api/v1/image/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2Fcc3dbf9ecf804247b1c003e3c9b4511f?format=webp&width=800&height=1200',
     },
+    {
+      name: 'title',
+      type: 'string',
+      defaultValue: 'The Great American Lager Since 1876',
+    },
+    {
+      name: 'subtitle',
+      type: 'string',
+      defaultValue:
+        "From steam-powered breweries to today's neighborhood bars, we've served generations through boom times, quiet years, and everything in between.",
+    },
+    {
+      name: 'ctaText',
+      type: 'string',
+      defaultValue: 'Find Near You',
+    },
   ],
 });
 
 Builder.registerComponent(WhatsNew, {
   name: 'WhatsNew',
+  inputs: [
+    {
+      name: 'title',
+      type: 'string',
+      defaultValue: "What's New",
+    },
+    {
+      name: 'subtitle',
+      type: 'string',
+      defaultValue: 'Campaigns',
+    },
+  ],
 });
 
 Builder.registerComponent(OurBeers, {
   name: 'OurBeers',
+  inputs: [
+    {
+      name: 'title',
+      type: 'string',
+      defaultValue: 'Our Beers',
+    },
+  ],
 });
 
 Builder.registerComponent(FindABud, {
