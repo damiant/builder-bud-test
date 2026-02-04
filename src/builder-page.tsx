@@ -6,7 +6,7 @@ import type { BuilderContent } from '@builder.io/react';
 builder.init('26dd8ae14bc5499f8139f6bb6f3e30ca');
 
 export const BuilderPage = () => {
-  const [content, setContent] = useState<BuilderContent | null>(null);
+  const [content, setContent] = useState<BuilderContent | undefined>(undefined);
 
   useEffect(() => {
     async function fetchContent() {
