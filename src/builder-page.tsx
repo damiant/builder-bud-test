@@ -10,6 +10,7 @@ export const BuilderPage = () => {
 
   useEffect(() => {
     async function fetchContent() {
+      console.log('Fetching Builder content for the page', window.location.pathname);
       const page = await builder
         .get('page', {
           url: window.location.pathname,
