@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './AgeGate.css';
 
 const AGE_GATE_KEY = 'budweiser_age_gate_status';
