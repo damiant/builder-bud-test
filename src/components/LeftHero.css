@@ -6,30 +6,30 @@
   overflow: hidden;
 }
 
-.clydesdales-image-container {
+.left-hero-image-container {
   width: 40%;
   position: relative;
 }
 
-.clydesdales-image {
+.left-hero-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.clydesdales-content-container {
+.left-hero-content-container {
   width: 60%;
   display: flex;
   align-items: center;
   padding: 60px 80px;
 }
 
-.clydesdales-content {
+.left-hero-content {
   max-width: 500px;
 }
 
-.clydesdales-title {
+.left-hero-title {
   font-family: var(--font-brand);
   font-size: 48px;
   color: #0a1b3d;
@@ -37,14 +37,14 @@
   line-height: 1.1;
 }
 
-.clydesdales-description {
+.left-hero-description {
   font-size: 18px;
   color: #333;
   margin-bottom: 30px;
   line-height: 1.5;
 }
 
-.clydesdales-cta {
+.left-hero-cta {
   background-color: var(--brand-red);
   color: var(--brand-white);
   border: none;
@@ -58,17 +58,17 @@
     box-shadow var(--transition-base) ease;
 }
 
-.clydesdales-cta:hover {
+.left-hero-cta:hover {
   box-shadow: 0 4px 12px rgba(207, 10, 44, 0.3);
   transform: translateY(-2px);
 }
 
 @media (max-width: 1024px) {
-  .clydesdales-content-container {
+  .left-hero-content-container {
     padding: 40px 60px;
   }
 
-  .clydesdales-title {
+  .left-hero-title {
     font-size: 38px;
   }
 }
@@ -80,23 +80,23 @@
     min-height: auto;
   }
 
-  .clydesdales-image-container {
+  .left-hero-image-container {
     width: 100%;
     height: 300px;
   }
 
-  .clydesdales-content-container {
+  .left-hero-content-container {
     width: 100%;
     padding: 40px 20px;
     justify-content: center;
     text-align: center;
   }
 
-  .clydesdales-title {
+  .left-hero-title {
     font-size: 32px;
   }
 
-  .clydesdales-description {
+  .left-hero-description {
     font-size: 16px;
   }
 }
