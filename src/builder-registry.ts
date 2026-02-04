@@ -46,6 +46,18 @@ Builder.registerComponent(Hero, {
 
 Builder.registerComponent(WhatsNew, {
   name: 'WhatsNew',
+  inputs: [
+    {
+      name: 'title',
+      type: 'string',
+      defaultValue: "What's New",
+    },
+    {
+      name: 'subtitle',
+      type: 'string',
+      defaultValue: 'Campaigns',
+    },
+  ],
 });
 
 Builder.registerComponent(OurBeers, {
