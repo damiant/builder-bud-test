@@ -169,11 +169,11 @@
   .age-gate-container {
     flex-direction: column;
   }
-  
+
   .age-gate-image-side {
     display: none;
   }
-  
+
   .age-gate-title {
     font-size: 2.5rem;
   }

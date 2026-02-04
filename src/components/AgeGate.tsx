@@ -57,7 +57,8 @@ const AgeGate: React.FC = () => {
           <div className="age-gate-content">
             <h1 className="age-gate-title">Are You Over 21?</h1>
             <p className="age-gate-subtitle">
-              You can enjoy this website if you're of legal drinking age. Your data won't be stored or shared.
+              You can enjoy this website if you're of legal drinking age. Your data won't be stored
+              or shared.
             </p>
             <p className="age-gate-instruction">Please enter your date of birth.</p>
 
@@ -111,8 +112,9 @@ const AgeGate: React.FC = () => {
             <div className="age-gate-footer">
               <h2 className="age-gate-footer-title">Enjoy Responsibly</h2>
               <p className="age-gate-legal">
-                ©2026 Anheuser-Busch, Budweiser® Lager Beer, St. Louis MO. By submitting this form, you agree to be bound by the{' '}
-                <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>. Do Not Sell My Personal Information{' '}
+                ©2026 Anheuser-Busch, Budweiser® Lager Beer, St. Louis MO. By submitting this form,
+                you agree to be bound by the <a href="#">Terms of Service</a> and{' '}
+                <a href="#">Privacy Policy</a>. Do Not Sell My Personal Information{' '}
                 <a href="#">Limit The Use Of My Sensitive Personal Information</a>
               </p>
               <p className="age-gate-warning">DO NOT SHARE THIS CONTENT WITH THOSE UNDER 21.</p>
