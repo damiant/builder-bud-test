@@ -11,7 +11,7 @@ interface RightHeroProps {
 const RightHero: React.FC<RightHeroProps> = ({
   title = 'Originals, Not Souvenirs',
   description = 'Budweiser originals you actually wear, hats and shirts built for daily use. Shop the rest of the lineup: hoodies, jackets, beanies, bags, and more.',
-  buttonText = 'Shop For Merch Here',
+  buttonText = 'Shop',
   imageUrl = 'https://cdn.builder.io/api/v1/image/assets%2F02c8915fddb94a1bb00e9fe3d6b7cc9a%2F7fd13bd84bb44641827e8febc58991c7?format=webp&width=800&height=1200',
 }) => {
   return (

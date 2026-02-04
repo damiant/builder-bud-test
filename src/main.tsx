@@ -1,5 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import { Builder } from '@builder.io/react';
 import './index.css';
 import App from './App.tsx';
@@ -10,6 +11,8 @@ Builder.register('editor.settings', editorSettings);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </StrictMode>
 );
