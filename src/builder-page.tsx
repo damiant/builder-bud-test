@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import { BuilderComponent, builder } from '@builder.io/react';
-import type { BuilderContent } from '@builder.io/react';
 
 // Initialize Builder with your public API key
 builder.init('26dd8ae14bc5499f8139f6bb6f3e30ca');
 
 export const BuilderPage = () => {
-  const [content, setContent] = useState<BuilderContent | undefined>(undefined);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [content, setContent] = useState<any>(undefined);
 
   useEffect(() => {
     async function fetchContent() {
