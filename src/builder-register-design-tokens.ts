@@ -1,4 +1,6 @@
-export const editorSettings = {
+import { Builder } from '@builder.io/react';
+
+const editorSettings = {
   styleStrictMode: false,
   allowOverridingTokens: true,
   designTokensOptional: false,
@@ -115,3 +117,5 @@ export const editorSettings = {
     ],
   },
 };
+
+Builder.register('editor.settings', editorSettings);
